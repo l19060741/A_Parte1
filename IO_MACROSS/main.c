@@ -1,5 +1,6 @@
 /**********************************************************************************************************************
 //ESTA ES LA RAMA 1
+// MAIN
  // FileName:        main.c
  // Dependencies:    msp.h, stdint.h
  // Processor:       MSP432
@@ -9,8 +10,8 @@
  // Description:        UTILIZACION DE MACROS A REGISTROS DE PERIFERICO GPIO.
  // Authors:         ALFREDO CHACON
  // Updated:         03/2021
- //Nota: no se est醤 usando las estructuras definidas en los sourcefiles dados por el BSP de TI, las macros declaradas
- //      se incializan con las direcciones de memoria de los registros de los perifericos en cuesti髇
+ //Nota: no se est谩n usando las estructuras definidas en los sourcefiles dados por el BSP de TI, las macros declaradas
+ //      se incializan con las direcciones de memoria de los registros de los perifericos en cuesti贸n
  ************************************************************************************************************************/
 /************************************************************************************************
  * * Copyright (C) 2021 by Alfredo Chacon - TecNM /IT Chihuahua
@@ -43,7 +44,7 @@
 #define HWREG8(x)         (*((volatile uint8_t *)(x)))
 #define HWREG16(x)        (*((volatile uint16_t *)(x)))
 #define HWREG32(x)        (*((volatile uint32_t *)(x)))
-// Las funciones macros de preprocesador act鷄n como una b鷖queda y reemplazan el software justo antes de la compilaci髇. Cualquier cosa que escriba se sustituye directamente en su c骴igo. Esto nos permite saltar llamadas y regresar de la funci髇,
+// Las funciones macros de preprocesador act煤an como una b煤squeda y reemplazan el software justo antes de la compilaci贸n. Cualquier cosa que escriba se sustituye directamente en su c贸digo. Esto nos permite saltar llamadas y regresar de la funci贸n,
 #define P1_IN  (HWREG8(0x040004c00))
 #define P1_OUT (HWREG8(0x040004c02))
 #define P1_DIR (HWREG8(0x040004c04))
